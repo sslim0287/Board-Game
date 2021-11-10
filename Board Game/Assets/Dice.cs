@@ -7,7 +7,7 @@ public class Dice : MonoBehaviour {
     private Sprite[] dice;
     
     private bool coroutineAllowed = true;
-    private int playerMove = 1;
+    public static int playerMove = 1;
 
 	// Use this for initialization
 	private void Start () {

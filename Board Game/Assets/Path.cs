@@ -23,7 +23,7 @@ public class Path : MonoBehaviour {
             Move();
 	}
 
-    private void Move()
+    public void Move()
     {
         if (pointsIndex <= points.Length - 1)
         {
@@ -37,4 +37,9 @@ public class Path : MonoBehaviour {
             }
         }
     }
+	
+	public void MoveInstant()
+	{
+		transform.position = points[pointsIndex].transform.position;
+	}
 }
